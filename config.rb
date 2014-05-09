@@ -4,7 +4,7 @@
 
 # Meta.
 set :meta, {
-  title: 'Foo',
+  title: 'Jayphen — portfolio',
   url: 'http://foo.com',
 }
 
@@ -16,7 +16,7 @@ set :syntax_theme, Rouge::Themes::Base16
 # To disable GA, leave unset or set to nil
 # Code will only be injected in build environment
 # TODO: extract to MM extension
-set :ga_key, 'UA-XXXXXXX-Y'
+set :ga_key, 'UA-6252436-2'
 
 # Change to your Disqus shortname.
 # To Disable Disqus, leave unset or set to nil
@@ -39,22 +39,21 @@ end
 # Ignores.
 ignore '/calendar.html'
 
-
 ######################################################################
 # Blog settings.
 ######################################################################
 
-Time.zone = "Amsterdam"
+# Time.zone = "Sydney"
 
-activate :blog do |blog|
-  blog.prefix = 'blog'
-  blog.permalink = '{year}/{title}.html'
-  blog.taglink = "tags/{tag}.html"
-  blog.default_extension = ".md"
+# activate :blog do |blog|
+#   blog.prefix = 'blog'
+#   blog.permalink = '{year}/{title}.html'
+#   blog.taglink = "tags/{tag}.html"
+#   blog.default_extension = ".md"
 
-  blog.paginate = true
-  blog.per_page = 10
-end
+#   blog.paginate = true
+#   blog.per_page = 10
+# end
 
 # Enable XML feed. Don't forget to edit feed.xml.builder first.
 # page "/feed.xml", layout: false
@@ -79,9 +78,9 @@ configure :build do
   activate :asset_hash
 
   # Ensmallen assets
-  activate :minify_html, remove_input_attributes: false
+  # activate :minify_html, remove_input_attributes: false
   activate :minify_css
   activate :minify_javascript
   activate :image_optim
-  activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
+  # activate :gzip, exts: %w(.js .css .html .htm .svg .ttf .otf .woff .eot)
 end

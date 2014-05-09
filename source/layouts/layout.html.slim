@@ -11,6 +11,9 @@ doctype html
 html.nojs
   | <!--<![endif]-->
   head
+    script type="text/javascript" src="//use.typekit.net/geh8bzq.js"
+    javascript:
+      try{Typekit.load();}catch(e){}
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
     title = current_page.data.title
@@ -33,4 +36,3 @@ html.nojs
 
     = javascript_include_tag 'app'
     = partial 'partials/_google_analytics'
-    = partial 'partials/_disqus'

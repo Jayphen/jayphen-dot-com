@@ -1,0 +1,127 @@
+body
+  background: tint($blue, 95%)
+
+.wrap-copy
+  @include outer-container
+  @include pad(20px 0)
+  background: white
+  margin-top: 2em
+
+  h1, p, h2, h3, h4
+    @include pad(0 40px)
+
+    +media(max-width 800px)
+      @include pad(0 20px)
+
+  p
+    font-family: $serif
+
+  em
+    color: $medium-gray
+
+  blockquote
+    font-size: em(24)
+
+.leader
+
+  h1
+    font-weight: 700
+    text-transform: uppercase
+    font-size: em(64)
+    letter-spacing: em(0.8)
+    line-height: 1
+
+.a-story, .some-images, .what-i-do
+  +span-columns(6)
+
+  +media(max-width 800px)
+    +span-columns(12)
+
+.some-images
+  text-align: center
+
++media(max-width 800px)
+  blockquote
+    padding-left: 0
+
+.what-design-is
+  @include span-columns(7)
+  @include shift(2.5)
+
+  +media(max-width 800px)
+    @include span-columns(12)
+    @include shift(0)
+
+.note
+  font-size: em(14)
+  color: tint($medium-gray, 40%)
+
+header
+  @include outer-container
+  position: relative
+  margin-top: 2em
+  text-transform: uppercase
+  text-align: center
+  color: tint($blue, 80%)
+  font-weight: 700
+
+.my-work
+  position: absolute
+  right: em(20)
+
+  a
+    color: tint($blue, 40%)
+
+    &:hover
+      color: $pink
+
+  +media(max-width 500px)
+    position: static
+    margin-bottom: em(10)
+
+.paypal
+  margin: em(20) 0
+.what-ive-done
+  @include outer-container
+  margin-top: em(40)
+  background: $blue
+  // random comment
+  background-image: image-url('sydney.jpg')
+  background-size: cover
+  color: white
+  font-family: $serif
+  @include pad(20px)
+
+  +media(800px)
+    font-size: $base-font-size * 1.15
+    line-height: 1.5em
+    @include pad(60px)
+
+  .copy
+    @extend .what-design-is
+
+    +media(max-width 800px)
+      @include span-columns(12)
+      @include shift(0)
+
+  a
+    color: tint($blue, 70%)
+    font-weight: 700
+    letter-spacing: em(0.3)
+    background-position: 0 1.4em
+    @include linear-gradient(to bottom, tint($blue, 30%) 50%, transparent 50%, $fallback: transparent)
+
+    &:hover
+      color: white
+
+  .cta
+    +pad(10px 20px)
+    background: white
+    background-image: none
+    border-radius: 3px
+    color: $blue
+    line-height: 1.8
+    font-family: $sans-serif
+
+    &:hover
+      color: $pink

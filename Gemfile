@@ -6,6 +6,7 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem "middleman"
 gem "middleman-blog"
 gem "middleman-neat"
+gem "middleman-gh-pages"
 gem 'slim'
 gem "builder" # XMLfeeds
 gem "middleman-syntax"

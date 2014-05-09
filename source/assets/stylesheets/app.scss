@@ -2,4 +2,11 @@
 //= require _erb/_syntax
 
 @import 'bourbon';
+@import 'normalize-css/normalize.css';
+@import 'bitters/bitters';
 @import 'neat';
+@import '_partials/leader';
+
+::selection {
+  background: #FAFACA;
+}
