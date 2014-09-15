@@ -4,7 +4,7 @@ deploy          = require 'gulp-gh-pages'
 
 config =
   paths:
-    dist: '/build'
+    dist: 'build/**/*'
 
 ghpages =
   push: true
