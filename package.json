@@ -1,0 +1,27 @@
+{
+  "name": "jayphen-dot-com",
+  "version": "1.0.0",
+  "description": "Personal homepage",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.8"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-gh-pages": "^0.3.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jayphen/jayphen-dot-com.git"
+  },
+  "author": "Jayphen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jayphen/jayphen-dot-com/issues"
+  },
+  "homepage": "https://github.com/Jayphen/jayphen-dot-com"
+}
