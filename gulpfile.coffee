@@ -1,7 +1,7 @@
-gulp            = require 'gulp'
-clean           = require 'gulp-clean'
-deploy          = require 'gulp-gh-pages'
-mm              = require 'gulp-middleman'
+gulp   = require 'gulp'
+clean  = require 'gulp-clean'
+deploy = require 'gulp-gh-pages'
+mm     = require 'gulp-middleman'
 
 config =
   paths:
