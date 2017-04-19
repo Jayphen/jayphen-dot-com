@@ -4,7 +4,12 @@ title: 'Jayphen — design for humans'
 header
   .my-work
     a href="mailto:hello@jayphen.com" Contact me
-  .logoish Design by Jayphen
+  .logoish
+    span#location 
+      = image_tag 'spinner.svg', height: 18, width: 28
+      | Where is Jayphen?
+    script id="myTmpl" type="text/x-jsrender"
+      | <img width="28" src="{{:flag_url}}" /> Jayphen was last seen at: <strong>{{:name}}</strong> in {{:city}}, {{:country}}
 
 .wrap-copy
   section.leader

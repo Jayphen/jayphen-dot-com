@@ -60,14 +60,20 @@ header
   @include outer-container
   position: relative
   margin-top: 2em
-  text-transform: uppercase
-  text-align: center
-  color: tint($blue, 80%)
+  text-align: left
+  color: tint($blue, 70%)
   font-weight: 700
+  padding-left: em(20)
+
+  img
+    border-radius: 3px
+    margin-right: 5px
+    opacity: 0.5
+    vertical-align: -1px
 
 .my-work
-  position: absolute
-  right: em(20)
+  float: right
+  padding-right: em(20)
 
   a
     color: tint($blue, 40%)
