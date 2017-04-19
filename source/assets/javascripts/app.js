@@ -1,5 +1,6 @@
 //= require 'jquery/dist/jquery.js'
-//= require 'jsrender/jsrender.min.js'
+//= require 'jsrender/jsrender.js'
+//= require 'moment/moment.js'
 
 var counter = 0,
     counterEl = $('.js-counter');
@@ -20,6 +21,11 @@ var database = firebase.database();
 firebase.database().ref('/location').on('value', function(snapshot) {
   var tmpl = $.templates("#myTmpl");
   var data = snapshot.val();
+  $.map(data, function(val, i){
+    if (i === 'updated_at') {
+      data[i] = moment.unix(val).fromNow();
+    }
+  });
   var html = tmpl.render(data); 
   $("#location").html(html);
 });

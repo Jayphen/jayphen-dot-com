@@ -9,7 +9,7 @@ header
       = image_tag 'spinner.svg', height: 18, width: 28
       | Where is Jayphen?
     script id="myTmpl" type="text/x-jsrender"
-      | <img width="28" src="{{:flag_url}}" /> Jayphen was last seen at: <strong>{{:name}}</strong> in {{:city}}, {{:country}}
+      | <img width="28" src="{{:flag_url}}" /> Jayphen was last seen at: <strong>{{:name}}</strong> in {{:city}}, {{:country}} <small>{{:updated_at}}</small>
 
 .wrap-copy
   section.leader

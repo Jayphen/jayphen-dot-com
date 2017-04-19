@@ -4,7 +4,8 @@
   "description": "Personal homepage",
   "main": "Gulpfile.js",
   "dependencies": {
-    "gulp": "^3.8.8"
+    "gulp": "^3.8.8",
+    "vinyl-fs": "^2.4.4"
   },
   "devDependencies": {
     "coffee-script": "^1.8.0",
