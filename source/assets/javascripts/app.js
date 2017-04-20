@@ -1,4 +1,4 @@
 //= require 'jquery/dist/jquery.js'
-//= require 'jsrender/jsrender.js'
-//= require './dumb_counter'
-//= require './get_location'
+//= require './_dumb_counter'
+//= require './_get_location'
+//= require './_get_status'
