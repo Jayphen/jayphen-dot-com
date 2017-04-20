@@ -1,1 +1,0 @@
-var counter=0,counterEl=$(".js-counter");setInterval(function(){++counter,counterEl.text(300>counter?" "+counter+" ":" dickity 3 score ")},1e3);
