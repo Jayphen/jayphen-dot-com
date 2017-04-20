@@ -11,9 +11,9 @@ doctype html
 html.nojs
   | <!--<![endif]-->
   head
-    script type="text/javascript" src="//use.typekit.net/geh8bzq.js"
-    javascript:
-      try{Typekit.load();}catch(e){}
+    script type="text/javascript" data-cfasync="false" src="//use.typekit.net/geh8bzq.js"
+    script type="text/javascript" data-cfasync="false"
+      |try{Typekit.load();}catch(e){}
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
     title = current_page.data.title
