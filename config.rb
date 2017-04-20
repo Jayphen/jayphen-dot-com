@@ -16,7 +16,7 @@ set :syntax_theme, Rouge::Themes::Base16
 # To disable GA, leave unset or set to nil
 # Code will only be injected in build environment
 # TODO: extract to MM extension
-set :ga_key, 'UA-6252436-2'
+set :ga_key, 'UA-97710597-1'
 
 # Change to your Disqus shortname.
 # To Disable Disqus, leave unset or set to nil
