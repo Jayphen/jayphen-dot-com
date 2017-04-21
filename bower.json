@@ -1,0 +1,27 @@
+{
+  "name": "jayphen-dot-com",
+  "description": "Personal homepage",
+  "main": "Gulpfile.js",
+  "authors": [
+    "Jayphen"
+  ],
+  "license": "ISC",
+  "homepage": "jayphen.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/assets/_vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "^3.8.0",
+    "jsrender": "^0.9.84",
+    "instafeed.js": "^1.4.1",
+    "jquery": "~2.1.1",
+    "moment": "^2.18.1",
+    "normalize-css": "~3.0.1"
+  }
+}
